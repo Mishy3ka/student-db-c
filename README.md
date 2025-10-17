@@ -30,12 +30,12 @@
 
 ### Windows (MinGW/GCC):
 ```bash
-gcc z.c -o student_db.exe
+gcc main.c -o student_db.exe
 ```
 
 ### Linux/macOS:
 ```bash
-gcc z.c -o student_db
+gcc main.c -o student_db
 ```
 
 ## 🚀 Запуск
@@ -97,7 +97,7 @@ student_db.exe
 
 ```
 files/
-├── z.c              # Исходный код программы
+├── main.c           # Исходный код программы
 ├── README.md        # Документация
 └── Students.dat     # Файл с данными (создается автоматически)
 ```
