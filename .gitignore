@@ -1,0 +1,41 @@
+# Исполняемые файлы
+*.exe
+*.out
+*.app
+*.o
+*.obj
+
+# Файлы данных
+*.dat
+
+# Временные файлы компилятора
+*.a
+*.so
+*.dll
+*.dylib
+
+# Отладочные файлы
+*.dSYM/
+*.su
+*.idb
+*.pdb
+
+# IDE и редакторы
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Файлы сборки
+build/
+dist/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Тестовые файлы
+test_output/
+*.test
