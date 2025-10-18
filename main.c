@@ -102,9 +102,22 @@ int add_student(Student** students, int* count){
     }
     *students = temp;  // Обновляем указатель на новый массив
 
+    // Автоматическая генерация уникального ID
+    int new_id = 1;  // По умолчанию ID = 1
+    if(*count > 0) {
+        // Находим максимальный ID среди существующих студентов
+        int max_id = (*students)[0].id;
+        for(int i = 1; i < *count; i++) {
+            if((*students)[i].id > max_id) {
+                max_id = (*students)[i].id;
+            }
+        }
+        new_id = max_id + 1;  // Новый ID = максимальный + 1
+    }
+
     printf("\n┌─ Добавление студента ─────────┐\n");
-    printf("│ Введите ID: ");
-    scanf("%d", &(*students)[*count].id);
+    printf("│ Присвоен ID: %d\n", new_id);
+    (*students)[*count].id = new_id;  // Присваиваем автоматический ID
     printf("│ Введите имя: ");
     scanf("%s", (*students)[*count].name);
     printf("│ Введите возраст: ");
@@ -116,6 +129,7 @@ int add_student(Student** students, int* count){
     printf("✔ Студент успешно добавлен!\n");
     (*count)++;  // Увеличиваем счётчик студентов
 
+    return 0;
 }
 
 /*
