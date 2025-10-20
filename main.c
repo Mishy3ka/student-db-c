@@ -5,10 +5,11 @@
  * 
  */
 
-
+#include <stdio.h>
+#include <stdlib.h>
 #include "student.h"
 #include "func.h"
-#include <stdio.h>
+
 
 
 /*
