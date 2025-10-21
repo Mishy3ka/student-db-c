@@ -39,6 +39,9 @@ int main() {
                 show_students(students, &count);
                 break;
             case 3:
+                del_student(&students, &count);
+                break;
+            case 4:
                 save_to_file(students, &count, filename);
                 break;
             case 0:

@@ -7,5 +7,6 @@ int add_student(Student**, int*);                           // Добавлен�
 int show_students(Student*, int*);                          // Вывод списка всех студентов
 int save_to_file(Student*, int*, char*);                    // Сохранение данных в файл
 int load_from_file(Student**, int*, char*);                 // Загрузка данных из файла
+int del_student(Student**, int*);                           // Удаление студента
 
 #endif
